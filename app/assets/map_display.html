@@ -5,6 +5,7 @@
     <title>Map Display</title>
     <link rel="stylesheet" href="./leaflet/leaflet.css">
     <link rel="stylesheet" type="text/css" href="./common.css">
+    <!--<link rel="stylesheet" type="text/css" href="./button.css">-->
     <script src="./leaflet/leaflet.js"></script>
     <script src="./map_display.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
@@ -13,5 +14,10 @@
 <body>
     <div id="map"></div>
     <script src="map_display.js"></script>
+    <form name="form">
+        <input type="checkbox" name="select" value="高田馬場駅" > 高田馬場駅
+        <input type="checkbox" name="select" value="早稲田大学" > 早稲田大学
+        <input type="button" value="決定" onclick="clickBtn()"/>
+    </form>
 </body>
 </html>
